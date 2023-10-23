@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import Buttons from "./Buttons";
 import logo from "../Assets/Lucas_Bennesby__7_-removebg-preview.png";
-import resume from "../Assets/resume.pdf";
+import resume from "../Assets/resume2.pdf";
 
 function NavBar() {
   return (
