@@ -11,14 +11,12 @@ function Card(props) {
       />
       <p>{props.desc}</p>
 
-      <Buttons>
-        <a
-          target="_blank"
-          href={props.link}
-        >
-          Ir para projeto
-        </a>
-      </Buttons>
+      <a
+        target="_blank"
+        href={props.link}
+      >
+        Ir para projeto
+      </a>
     </div>
   );
 }
