@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+  color: #fff;
+}
+td {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+
+body::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #8892b0; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #62f9d5; /* color of the scroll thumb */
+  border-radius: 5px; /* roundness of the scroll thumb */
+  border: 1px solid #0a192f;
+}
+
+@media only screen and (max-width: 400px) {
+  tr {
+    display: block;
+
+    margin: 15px 0px;
+  }
+  caption {
+    margin: 15px 0px;
+  }
+}

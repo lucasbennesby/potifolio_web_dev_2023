@@ -1,0 +1,32 @@
+.Button {
+  display: block;
+  color: #5bebd0;
+  background-color: transparent;
+  border: 1px solid #5bebd0;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family: monospace;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-left: 15px;
+  font-size: 13px;
+  margin: 0;
+  width: 100%;
+}
+.Button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px #5bebd0;
+  cursor: pointer;
+}
+
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  pointer-events: none;
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
