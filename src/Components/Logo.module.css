@@ -1,0 +1,14 @@
+svg {
+  width: 75px;
+  height: 75px;
+}
+.logo {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: scale(0.6, 0.6);
+}
+.logo:hover {
+  transform: scale(0.61, 0.61);
+
+  filter: drop-shadow(3px 5px 0px #5bebd0);
+  cursor: pointer;
+}

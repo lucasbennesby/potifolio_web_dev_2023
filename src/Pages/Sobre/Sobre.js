@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Sobre.module.css";
+import Logo from "../../Components/Logo";
 function Sobre() {
   return (
     <div className={styles.text}>

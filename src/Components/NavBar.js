@@ -4,17 +4,14 @@ import styles from "./NavBar.module.css";
 import Buttons from "./Buttons";
 import logo from "../Assets/Lucas_Bennesby__7_-removebg-preview.png";
 import resume from "../Assets/resume2.pdf";
+import Logo from "./Logo";
 
 function NavBar() {
   return (
     <div className={styles.headerNav}>
       <ul className={styles.navUl}>
         <Link to={"/"}>
-          <img
-            className={styles.logo}
-            src={logo}
-            alt="Logo L"
-          />
+          <Logo />
         </Link>
 
         <div>

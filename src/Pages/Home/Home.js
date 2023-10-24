@@ -10,11 +10,11 @@ function Home() {
         <h2>Lucas Bennesby Lima.</h2>
         <h3>Eu construo coisas para a Web.</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse rem
-          error sequi neque, repellendus blanditiis illo quos sed quas eaque
-          consectetur molestias itaque ducimus? Ipsam adipisci deserunt
-          similique iusto laboriosam?
+          Eu sou estudante de sistemas de informação com especialidade em
+          desenvolvimento web. Atualmente estou focado em aperfeiçoar minhas
+          habilidades de desenvolvedor e apreder mais!
         </p>
+
         <div className={styles.buttonContainer}>
           <Buttons>
             <Link
