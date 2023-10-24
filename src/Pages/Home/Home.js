@@ -12,7 +12,7 @@ function Home() {
         <p>
           Eu sou estudante de sistemas de informação com especialidade em
           desenvolvimento web. Atualmente estou focado em aperfeiçoar minhas
-          habilidades de desenvolvedor e apreder mais!
+          habilidades de desenvolvedor e aprender mais!
         </p>
 
         <div className={styles.buttonContainer}>
