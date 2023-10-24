@@ -20,7 +20,6 @@ function Sobre() {
         Atualmente curso Sistemas de Informação e minha área de atuação
         preferida é o desenvolvimento, no momento de páginas web, como esta.
       </p>
-      <Modal />
     </div>
   );
 }
