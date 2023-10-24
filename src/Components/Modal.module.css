@@ -1,0 +1,53 @@
+.bgBlur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.card {
+  z-index: 999;
+  width: 625px;
+  height: fit-content;
+  background-color: #0a192f;
+  margin: auto;
+  border: 1px solid #5bebd0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: absolute;
+  top: 29%;
+  right: 29.5%;
+}
+p {
+  color: #5bebd0;
+  text-align: center;
+}
+.card > button {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    z-index: 999;
+    width: 82%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #0a192f;
+    margin: auto;
+    border: 1px solid #5bebd0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 32%;
+    right: 9%;
+  }
+}

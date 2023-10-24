@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Sobre.module.css";
 import Logo from "../../Components/Logo";
+import Modal from "../../Components/Modal";
 function Sobre() {
   return (
     <div className={styles.text}>
@@ -19,6 +20,7 @@ function Sobre() {
         Atualmente curso Sistemas de Informação e minha área de atuação
         preferida é o desenvolvimento, no momento de páginas web, como esta.
       </p>
+      <Modal />
     </div>
   );
 }

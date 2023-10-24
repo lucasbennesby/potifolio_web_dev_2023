@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Contato.module.css";
 import Buttons from "../../Components/Buttons";
 import emailjs from "emailjs-com";
+import Modal from "../../Components/Modal";
 
 function Contato() {
   const [userName, setUserName] = useState("");
@@ -9,6 +10,8 @@ function Contato() {
   const [userMessage, setuserMessage] = useState("");
   const [userPhone, setuserPhone] = useState("");
   const [formIsValid, setFormIsValid] = useState(false);
+  //modal message
+  const [modal, setModal] = useState(false);
   //validators
   const [nameValid, setNameValid] = useState();
   const [phoneValid, setPhoneValid] = useState();
@@ -43,7 +46,7 @@ function Contato() {
         )
         .then(
           (result) => {
-            alert("Email enviado com sucesso!");
+            setModal(true);
           },
           (error) => {
             alert("Email nao enviado erro:" + error);
@@ -151,6 +154,7 @@ function Contato() {
           </div>
         </form>
       </div>
+      {modal && <Modal />}
     </div>
   );
 }
