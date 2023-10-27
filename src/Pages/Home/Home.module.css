@@ -47,10 +47,13 @@ body {
 @media only screen and (max-width: 400px) {
   .container {
     padding: 25px;
-    margin-top: 25px;
+    margin-bottom: 5px;
   }
   .buttonContainer {
     width: 100%;
     margin-bottom: 15px;
+  }
+  table {
+    margin-bottom: 30px;
   }
 }

@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import Buttons from "./Buttons";
-import logo from "../Assets/Lucas_Bennesby__7_-removebg-preview.png";
 import resume from "../Assets/resume2.pdf";
 import Logo from "./Logo";
 
 function NavBar() {
+  const [toggle, setToggle] = useState("");
+  const handleClassToggle = () => {
+    if (toggle === "active") {
+      setToggle("");
+    } else {
+      setToggle("active");
+    }
+  };
   return (
     <div className={styles.headerNav}>
       <ul className={styles.navUl}>
@@ -14,18 +21,38 @@ function NavBar() {
           <Logo />
         </Link>
 
-        <div>
+        <div className={`${styles.mobileMenu} ${styles[toggle]}  `}>
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              onClick={handleClassToggle}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/projetos">Projetos</Link>
+            <Link
+              to="/projetos"
+              onClick={handleClassToggle}
+            >
+              Projetos
+            </Link>
           </li>
           <li>
-            <Link to={"/sobre"}>Sobre</Link>
+            <Link
+              to={"/sobre"}
+              onClick={handleClassToggle}
+            >
+              Sobre
+            </Link>
           </li>
           <li>
-            <Link to={"/contato"}>Contato</Link>
+            <Link
+              to={"/contato"}
+              onClick={handleClassToggle}
+            >
+              Contato
+            </Link>
           </li>
           <div className={styles.resume}>
             <a
@@ -35,6 +62,10 @@ function NavBar() {
               <Buttons>Curriculo</Buttons>
             </a>
           </div>
+          <button
+            className={`${styles.menuAnchor}`}
+            onClick={handleClassToggle}
+          ></button>
         </div>
       </ul>
     </div>

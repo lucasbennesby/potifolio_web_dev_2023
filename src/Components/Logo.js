@@ -20,7 +20,7 @@ function Logo() {
               d="m 31 20 h 10 v 31 h 10 v 10 h -20 v -41 z "
               fill="#5bebd0"
               stroke="#0a192f"
-              stroke-width="5"
+              strokeWidth="5"
               transform="translate(0,3)"
             />
           </g>

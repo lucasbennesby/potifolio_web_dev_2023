@@ -6,6 +6,9 @@
   text-decoration: none;
   counter-reset: section;
 }
+.menuAnchor {
+  display: none;
+}
 .logo {
   width: 70px;
 }
@@ -54,7 +57,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .headerNav {
+  /* .headerNav {
     margin: 0px;
     padding: 0px;
   }
@@ -68,7 +71,7 @@
     text-align: center;
   }
   .navUl > div > li > a {
-    /* border: 1px solid white; */
+    
     padding: 0px;
     margin-left: 10px;
   }
@@ -81,11 +84,106 @@
     display: block;
   }
   .resume {
-    display: none;
+    display: block;
   }
 
   .navUl > div {
     margin: 0px;
     padding: 0px;
+  } */
+
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 220px;
+    height: 100%;
+    padding-top: 10px;
+    background: #d55401;
+    box-shadow: inset -5px -10px 10px 0 rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+  }
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 220px;
+    height: 100%;
+    padding-top: 10px;
+    background: #0a192f;
+    border: 1px solid #5bebd0;
+    border-left: none;
+    box-shadow: inset -5px -10px 10px 0 rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    transition: all 300ms linear;
+  }
+  .active {
+    transition: all 300ms linear;
+
+    transform: translateX(0%);
+  }
+
+  /*  */
+  .menuAnchor {
+    display: block;
+    position: relative;
+    left: 61%;
+    top: -40%;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    background: #5bebd0;
+    border: 1px solid #5bebd0;
+    border-style: inset;
+    border-radius: 5px;
+  }
+
+  .menuAnchor:before {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-bottom: 9px;
+    width: 90%;
+    height: 4px;
+    background: #0a192f;
+    box-shadow: 0 0.45em 0 0 #0a192f, 0 0.9em 0 0 #0a192f;
+  }
+
+  .navUl {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 0px;
+  }
+  .headerNav {
+    margin-top: 5%;
+  }
+  .navUl > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-start;
+  }
+  li {
+    text-align: center;
+    width: 100%;
+    margin: 5% 0px;
+  }
+  li > a {
+    border: 1px solid #5bebd0;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .resume {
+    margin: 5% 0;
+    width: 75%;
   }
 }
